@@ -754,7 +754,6 @@ export async function runQwenServe(
         },
         {
           eventName: `qwen-code.daemon.session.${action}`,
-          ...(action === 'die' ? { severityNumber: 13 } : {}),
         },
       );
     },
